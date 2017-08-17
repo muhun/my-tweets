@@ -1,0 +1,70 @@
+.tweets {
+    padding: 1rem;
+    background: #fff;
+    border-radius: 0.5rem;
+}
+
+.tweet {
+    display: block;
+    float: left;
+    padding-bottom: 3rem;
+}
+
+.tweet .avatar {
+    border-radius: 100%;
+}
+
+.tweet .avatar,
+.tweet-content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tweet-content {
+    padding-left: 2rem;
+}
+
+.tweet-content .name {
+    font-weight: 700;
+    font-size: 1.75rem;
+    padding-right: 0.3rem;
+}
+
+.tweet-content .screen-name {
+    color: #8899A6;
+    font-size: 1.25rem;
+}
+
+.tweet-content .text {
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.tweet .avatar {
+    float: left;
+    width: 48px;
+}
+
+.tweet .tweet-content {
+    float: right;
+    width: calc(100% - 48px);
+}
+
+.tweet-img {
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 0.3rem;
+}
+
+.tweet .footer-tweet {
+    padding-top: 1rem;
+}
+
+.tweet .like {
+    color: #000;
+    text-decoration: none;
+}
+.tweet .like:hover {
+    color: #d9534f;
+}

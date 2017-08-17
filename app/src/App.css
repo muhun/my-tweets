@@ -1,0 +1,70 @@
+body {
+    background: #e6ecf0;
+}
+
+.header {
+    background-color: #000;
+    padding: 1.5rem;
+    color: #fff;
+}
+
+.body {
+    display: block;
+    width: 100%;
+    padding: 5rem 0;
+    min-height: 300px;
+    text-align: center;
+}
+
+.login-form {
+    min-height: 200px;
+    width: 300px;
+    border-radius: 3px;
+    background-color: #1dcaff;
+    display: inline-block;
+}
+
+.login-content {
+    padding-top: 5rem;
+}
+
+.login-title {
+    font-size: 1.5rem;
+    display: block;
+    font-weight: 700;
+    padding: 1rem;
+    color: #fff;
+}
+
+.btn-login {
+    display: table;
+    margin: 0 auto;
+}
+
+.icons {
+    padding-right: 0.5rem;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.login-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.tweets {
+    width: calc(100% - 310px);
+    padding: 0 1rem;
+    margin-left: 1rem;
+}
+
+.tweet-number {
+    padding-right: 0.5rem;
+}
+
+.tweets .time {
+    position: absolute;
+    right: 3rem;
+    color: #000;
+    font-weight: 300;
+}
