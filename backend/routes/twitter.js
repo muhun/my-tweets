@@ -8,7 +8,7 @@ var TwitterConfig = require('../config/twitter');
 passport.use(new TwitterStrategy({
   consumerKey: TwitterConfig.consumerKey,
   consumerSecret: TwitterConfig.consumerSecret,
-  callbackURL: "http://127.0.0.1:3000/auth/twitter/callback"
+  callbackURL: "http://127.0.0.1:3001/auth/twitter/callback"
 }, function (token, tokenSecret, profile, done) {
   return done(null, {
     profile: profile,
@@ -35,7 +35,7 @@ router.get('/auth/twitter/callback', passport.authenticate('twitter', {failureRe
             res.send(err);
           } else {
             console.info("Created  information for user");
-            res.redirect('http://127.0.0.1:3001?id=' + req.user.profile.id);
+            res.redirect('http://127.0.0.1:3000?id=' + req.user.profile.id);
           }
         });
       } else {
@@ -50,7 +50,7 @@ router.get('/auth/twitter/callback', passport.authenticate('twitter', {failureRe
             if (err) 
               res.send("Updated fail");
             console.info("Updated information for user");
-            res.redirect('http://127.0.0.1:3001?id=' + req.user.profile.id);
+            res.redirect('http://127.0.0.1:3000?id=' + req.user.profile.id);
           })
       }
     });

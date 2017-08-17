@@ -23,7 +23,7 @@ let store = createStore(userToDo);
 // Declare default values here
 class Global {
   constructor() {
-    this.apiGate = "http://127.0.0.1:3000";
+    this.apiGate = "http://127.0.0.1:3001";
     this.me = this.apiGate + "/connect/{0}";
     this.tweets = this.apiGate + "/tweets/{0}";
     this.removeTweet = this.apiGate + "/tweets/delete/{0}";
